@@ -58,7 +58,7 @@ for folder in folders:
         if IsExistInExcel(md5_path, value):
             print(file_path)
             #os.remove(file_path)
-            print(os.path.join(folder_dir, '重复'+file))
-            os.rename(file_path,os.path.join(folder_dir, '重复'+file))
+            print(os.path.join(folder_dir, '重复' + file))
+            os.rename(file_path, os.path.join(folder_dir, '重复' + file))
         else:
             AddMD5Value(md5_path, value)

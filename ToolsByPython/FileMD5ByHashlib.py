@@ -19,7 +19,7 @@ path=(r"D:\视频1：待入库\待删").decode('utf-8')
 files=os.listdir(path)
 for file in files:
     old_file=os.path.join(path, file)
-    new_file=os.path.join(path, FileMD5(old_file)+'##@jilebox%video&$##.mp4')
+    new_file=os.path.join(path, FileMD5(old_file) + '##@jilebox%video&$##.mp4')
     print old_file
     print new_file
     os.rename(old_file, new_file)

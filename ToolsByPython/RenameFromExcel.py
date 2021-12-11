@@ -26,7 +26,7 @@ for each in files:
         if each==col2:
 
             old_file = os.path.join(path, each)
-            new_file=os.path.join(path, str(int(cols1[index]))+'.mp4')
+            new_file=os.path.join(path, str(int(cols1[index])) + '.mp4')
             print(old_file)
             print(new_file)
             os.rename(old_file, new_file)

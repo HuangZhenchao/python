@@ -14,7 +14,7 @@ class JileSpider(scrapy.Spider):
     start_urls = ['http://www.jimobox.com/']
 
     def parse(self, response):
-        domains='http://www.jimobox.com/'
+        domains='http://www.jimobox.com/'#http://www.xixibox.com/
         moduleArr=['video/']
         for module in moduleArr:
             with ThreadPoolExecutor(5) as executor:
