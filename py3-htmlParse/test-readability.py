@@ -8,5 +8,5 @@ response=requests.get('https://blog.csdn.net/qq_42156420/article/details/8078467
 
 readable_article=Document(response.content).summary()
 readable_title=Document(response.content).short_title()
-print 'readable_article: ',readable_article
-print 'readable_title: ',readable_title
+print ('readable_article: ',readable_article)
+print ('readable_title: ',readable_title)
